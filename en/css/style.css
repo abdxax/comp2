@@ -1,0 +1,16 @@
+.login-body{
+    background-color: darkgrey;
+}
+.form-ins{
+    position: absolute;
+    top: 15vh;
+    background-color: #fff;
+}
+
+.form-ins img{
+ margin-bottom: 20px;
+}
+.card{
+    margin: 30px;
+    
+}
