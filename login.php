@@ -1,4 +1,5 @@
 <?php
+session_start();
 require 'config/login.php';
 $log=new Login();
 if(isset($_POST['sub'])){

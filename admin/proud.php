@@ -2,6 +2,12 @@
 session_start();
 require '../config/admin.php';
 $admin =new Admin();
+if(!$admin->isAdmin( $_SESSION['email'],$_SESSION['pass'])){
+    header("location:../login.php");
+   }
+   else{
+   
+   }
 $res=$admin->getpro();
 if(isset($_FILES['srfile'])){
     print_r($_FILES['srfile']);

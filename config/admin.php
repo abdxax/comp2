@@ -121,6 +121,16 @@ class Admin  extends DBConnection{
         }
     }
 
+    public function isAdmin($email,$pass){
+        $sql=$this->db->prepare("SELECT * FROM user WHERE email=? AND password=?");
+        $sql->execute(array($email,$pass));
+        if($sql->rowCount()<=0){
+          return false;
+        
+        }
+        return true;
+    }
+
     
 
 
